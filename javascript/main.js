@@ -11,10 +11,10 @@ for (let i = 0; i < countryParts.length; i++) {
   });
 }
 
-const mapBtn = document.getElementById("map-btn");
-const welcomePage = document.querySelector(".welcome-container");
-const mapDiv = document.querySelector(".map-div");
-mapBtn.addEventListener("click", function () {
-  welcomePage.style.display = "none";
-  mapDiv.style.display = "block";
-});
+// const mapBtn = document.getElementById("map-btn");
+// const welcomePage = document.querySelector(".welcome-container");
+// const mapDiv = document.querySelector(".map-div");
+// mapBtn.addEventListener("click", function () {
+//   welcomePage.style.display = "none";
+//   mapDiv.style.display = "block";
+// });

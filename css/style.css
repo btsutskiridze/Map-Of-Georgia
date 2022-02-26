@@ -93,10 +93,9 @@ svg {
 }
 
 #text-container h1 {
-  max-width: 100%;
   display: none;
   color: wheat;
-  background-color: #aa7751;
+  background-color: #aa7f5f;
   border-radius: 70px 0px 0px 70px;
   padding: 20px 60px;
   font-size: 4vw;
@@ -104,13 +103,6 @@ svg {
   animation: fadeIn 0.9s;
 }
 
-#location-h1 {
-  position: absolute;
-  display: flex;
-  font-size: 4vw;
-  margin: 20px 0 0 60px;
-  color: #875d37;
-}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -120,4 +112,14 @@ svg {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+#location-h1 {
+  position: absolute;
+  display: flex;
+  font-size: 4vw;
+  margin: 20px 0 0 50px;
+  color: #3b527c;
+  text-shadow: 1px 1px 1px #ffffff, -1px -1px 1px #ffffff, -1px 0px 1px #ffffff,
+    0px -1px 1px #ffffff;
 }
