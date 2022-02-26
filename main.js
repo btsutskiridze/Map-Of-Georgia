@@ -1,6 +1,6 @@
 const countryParts = document.querySelectorAll(".country-parts");
 const svg = document.querySelector("svg");
-const path = svg.lastElementChild.children;
+const path = svg.lastElementChild.lastElementChild.children;
 
 for (let i = 0; i < countryParts.length; i++) {
   path[i].addEventListener("mouseover", function () {

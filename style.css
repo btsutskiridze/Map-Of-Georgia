@@ -8,13 +8,14 @@ html {
 }
 body {
   min-height: 100vh;
-  background: deepskyblue;
+  /* background: #eebc86; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow: hidden;
 }
 
 .welcome-container {
   position: relative;
-  background-color: rgb(66, 66, 116);
+  background-color: #3d7e4d;
   height: 100vh;
   width: 100%;
   text-align: center;
@@ -23,7 +24,7 @@ body {
   padding-top: 100px;
 }
 .welcome-container h1 {
-  color: #f5d8b1;
+  color: #e5e866;
   font-size: 6em;
 }
 .button-container {
@@ -35,20 +36,21 @@ body {
 }
 .button-container p {
   font-size: 2em;
-
+  font-weight: 300;
   float: left;
   padding-right: 30px;
-  color: #d0bba0;
+  color: #dcdd9e;
 }
 
 .button-container button {
   float: right;
   font-size: 2em;
+  font-weight: 600;
   padding: 10px;
   border-radius: 5px;
   border: unset;
-  color: rgb(40, 31, 72);
-  background-color: rgb(171, 171, 226);
+  color: #1a642d;
+  background-color: #e5e866;
   transition: all 0.2s;
 }
 .button-container button:hover {
@@ -56,9 +58,10 @@ body {
 }
 .map-div {
   display: none;
-  /* position: relative; */
+  position: relative;
   /* height: 100%; */
-  width: 70%;
+  width: 100%;
+  margin: 0;
   display: flex;
   align-items: center;
   /* align-self: flex-end; */
@@ -68,10 +71,13 @@ body {
 }
 .map-div path:hover {
   fill: #de965e;
+  /* transform: translateX(50px); */
+  z-index: 15;
 }
 svg {
   width: 100%;
-  margin: 13% 15% 0 100px;
+  height: 100%;
+  /* margin: 13% 15% 0 100px; */
 
   z-index: 0;
 }
@@ -86,20 +92,29 @@ svg {
   right: 30px;
 }
 
-.map-div h1 {
-  width: 700px;
+#text-container h1 {
   max-width: 100%;
   display: none;
-  color: white;
-  font-size: 5vw;
-  text-align: left;
+  color: wheat;
+  background-color: #aa7751;
+  border-radius: 70px 0px 0px 70px;
+  padding: 20px 60px;
+  font-size: 4vw;
+  text-align: right;
   animation: fadeIn 0.9s;
 }
 
+#location-h1 {
+  position: absolute;
+  display: flex;
+  font-size: 4vw;
+  margin: 20px 0 0 60px;
+  color: #875d37;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(20px);
   }
   100% {
     opacity: 1;
