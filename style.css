@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  background: deepskyblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.welcome-container {
+  position: relative;
+  background-color: rgb(66, 66, 116);
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.welcome-container h1:first-child {
+  padding-top: 100px;
+}
+.welcome-container h1 {
+  color: #f5d8b1;
+  font-size: 6em;
+}
+.button-container {
+  /* width: 40%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+.button-container p {
+  font-size: 2em;
+
+  float: left;
+  padding-right: 30px;
+  color: #d0bba0;
+}
+
+.button-container button {
+  float: right;
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 5px;
+  border: unset;
+  color: rgb(40, 31, 72);
+  background-color: rgb(171, 171, 226);
+  transition: all 0.2s;
+}
+.button-container button:hover {
+  transform: translateX(10px);
+}
+.map-div {
+  display: none;
+  /* position: relative; */
+  /* height: 100%; */
+  width: 70%;
+  display: flex;
+  align-items: center;
+  /* align-self: flex-end; */
+  /* text-align: center; */
+  /* margin: 30px; */
+  animation: fadeIn 0.9s;
+}
+.map-div path:hover {
+  fill: #de965e;
+}
+svg {
+  width: 100%;
+  margin: 13% 15% 0 100px;
+
+  z-index: 0;
+}
+
+#text-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 30%;
+  top: 60px;
+  right: 30px;
+}
+
+.map-div h1 {
+  width: 700px;
+  max-width: 100%;
+  display: none;
+  color: white;
+  font-size: 5vw;
+  text-align: left;
+  animation: fadeIn 0.9s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
