@@ -29,44 +29,45 @@ body {
 }
 
 .welcome-container {
-  position: relative;
+  padding: 20vh 20px;
+  text-align: center;
+  min-height: 100vh;
   background-color: #3d7e4d;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* margin: 100px; */
 }
 .welcome-container h1:first-child {
   padding: 20px;
 }
-.welcome-container h1 {
+.welcome-container > h1 {
+  font-size: clamp(2rem, 1rem + 4vw, 6rem);
   color: #e5e866;
-  font-size: 6.8vh;
 }
+#h1 {
+  font-size: clamp(2rem, 1rem + 10vw, 9rem);
+}
+
 .button-container {
-  /* width: 40%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 30px;
 }
+@media (min-width: 600px) {
+  .button-container {
+    /* width: 40%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+}
 .button-container p {
-  font-size: 4vh;
+  font-size: clamp(1rem, 0.5rem + 10vw, 1.5rem);
   font-weight: 300;
-  float: left;
-  padding-right: 30px;
+  padding: 0 20px 0 20px;
   color: #dcdd9e;
 }
 
 .button-container button {
-  float: right;
-  font-size: 4vh;
-  font-weight: 600;
+  font-size: clamp(1rem, 1rem + 10vw, 2rem);
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: unset;
   color: #1a642d;
   background-color: #e5e866;
@@ -75,6 +76,7 @@ body {
 .button-container button:hover {
   transform: translateX(10px);
 }
+
 .map-div {
   display: none;
   position: relative;
@@ -122,14 +124,13 @@ svg {
 }
 
 @media screen and (max-width: 890px) {
-  #tex-container {
+  #text-container {
+    right: 30px;
   }
   #text-container h1 {
     /* font-size: 3.8vh; */
     padding: 10px;
     margin-top: -15%;
-    margin-left: 0%;
-    margin-right: -30%;
   }
 }
 
