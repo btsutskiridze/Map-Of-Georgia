@@ -13,19 +13,38 @@ body {
   overflow: hidden;
 }
 
+@media screen and (min-width: 1921px) {
+  body {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .map-div h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-height: 520px) {
+  body {
+    overflow: visible;
+  }
+}
+
 .welcome-container {
   position: relative;
   background-color: #3d7e4d;
   height: 100vh;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 100px; */
 }
 .welcome-container h1:first-child {
-  padding-top: 100px;
+  padding: 20px;
 }
 .welcome-container h1 {
   color: #e5e866;
-  font-size: 6em;
+  font-size: 6.8vh;
 }
 .button-container {
   /* width: 40%; */
@@ -35,7 +54,7 @@ body {
   margin: 30px;
 }
 .button-container p {
-  font-size: 2em;
+  font-size: 4vh;
   font-weight: 300;
   float: left;
   padding-right: 30px;
@@ -44,7 +63,7 @@ body {
 
 .button-container button {
   float: right;
-  font-size: 2em;
+  font-size: 4vh;
   font-weight: 600;
   padding: 10px;
   border-radius: 5px;
@@ -59,7 +78,7 @@ body {
 .map-div {
   display: none;
   position: relative;
-  /* height: 100%; */
+  height: 100%;
   width: 100%;
   margin: 0;
   display: flex;
@@ -86,10 +105,9 @@ svg {
   position: absolute;
   display: flex;
   align-items: center;
-  width: 50%;
-  height: 30%;
+  width: fit-content;
   top: 60px;
-  right: 30px;
+  right: 100px;
 }
 
 #text-container h1 {
@@ -101,6 +119,18 @@ svg {
   font-size: 4vw;
   text-align: right;
   animation: fadeIn 0.9s;
+}
+
+@media screen and (max-width: 890px) {
+  #tex-container {
+  }
+  #text-container h1 {
+    /* font-size: 3.8vh; */
+    padding: 10px;
+    margin-top: -15%;
+    margin-left: 0%;
+    margin-right: -30%;
+  }
 }
 
 @keyframes fadeIn {
